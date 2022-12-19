@@ -1,0 +1,260 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 5px;
+    color: lightslategray;
+  }
+  
+  p {
+    margin: 0;
+  }
+
+  header h1 {
+    background-color: #90a6ee;
+    color:rgb(61, 70, 70);
+    padding: 15px;
+    width:350px;
+    margin:-5px
+  }
+  
+header {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(61, 70, 70);
+    font-style: italic;
+    padding: 10px;
+}
+ 
+nav {
+    margin-top: 10px;
+margin-left: auto;
+font-size: 30px;
+}
+
+nav a {
+    color:#90a6ee;
+    text-decoration: none;
+}
+
+.banner {
+    background-image:url("./images/02-hero-bg.jpg");
+    height: 200px;
+    font-size: 25px;
+  }
+
+  .banner h2 {
+    float:right;
+    margin-top: 115px;
+    background-color: #90a6ee;
+    color:rgb(61, 70, 70);
+    padding: 10px;
+    width:200px;
+  }
+
+#categoryGrid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 200px 400px 150px 150px;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-areas:
+    "about-me description description"
+    "work surf surf"
+    ". leds calculator"
+    ". pastel-puzzles run-buddy"
+    ;
+  }
+
+  #about-me {
+    margin-top: 20px;
+    font-size: 35px;
+    line-height: 50px;
+    margin-left: 10px;
+    border-right: 4px solid rgb(48, 84, 126);
+    height:76%;
+}
+  
+  #description {
+    font-size: 20px;
+    width:200%;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+  #work {
+    margin: 0px;
+    margin-left: 7px;
+    font-size: 35px;
+    grid-area: work;
+    border-right: 4px solid rgb(48, 84, 126);
+    height: 690px;
+  }
+
+  #work h2 {
+    margin-bottom: 615px;
+  }
+
+  #surf { 
+    grid-area: surf;
+    background-image: url("./images/02-portfolio-4.jpg");
+  }
+  
+#surf:hover {
+    opacity: 0.8;
+    transform: scale(1.5);
+}
+
+  #leds {
+    grid-area: leds;
+    background-image: url("./images/02-portfolio-1.jpg");
+  }
+
+  #leds:hover {
+    opacity: 0.8;
+    transform: scale(1.5);
+}
+  
+  #calculator {
+    grid-area: calculator;
+    background-image: url("./images/02-portfolio-2.jpg");
+  }
+
+  #calculator:hover {
+    opacity: 0.8;
+    transform: scale(1.5);
+}
+  
+  #pastel-puzzles {
+    grid-area: pastel-puzzles;
+    background-image: url("./images/02-portfolio-3.jpg");
+  }
+
+  #pastel-puzzles:hover {
+    opacity: 0.8;
+    transform: scale(1.5);
+}
+  
+  #run-buddy {
+    grid-area: run-buddy;
+    background-image: url("./images/02-run-buddy.jpg");
+  }
+
+  #run-buddy:hover {
+    opacity: 0.8;
+    transform: scale(1.5);
+}
+
+  .categoryGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    margin-left: 30px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+  }
+
+  .heading {
+    background-color: rgba(252, 251, 251, 0.7);
+    padding: 30px;
+    height: 25px;
+    width:200px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 0px;
+    margin-left: 0px;
+    border-bottom: 5px solid #7c94e2;
+  }
+
+  #surf .subTitle{
+    position:absolute;
+    margin-top: 340px;
+    margin-left: 30px;
+  }
+
+  #leds .subTitle{
+    position:absolute;
+    margin-top: 95px;
+    margin-left: 30px;
+  }
+  
+  #calculator .subTitle{
+    position:absolute;
+    margin-top: 95px;
+    margin-left: 30px;
+  }
+  
+  #pastel-puzzles .subTitle{
+    position:absolute;
+    margin-top: 95px;
+    margin-left: 30px;
+  }
+  
+  #run-buddy .subTitle{
+    position:absolute;
+    margin-top: 95px;
+    margin-left: 30px;
+  }
+  
+#contact-me {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "contacts number website fb ig"
+  ;
+}
+
+#number {
+    margin-top: 50px;
+    grid-area: number;
+}
+
+#website {
+    margin-right: 50px;
+    margin-top: 50px;
+    grid-area: website;
+}
+
+#fb {
+    margin-top: 50px;
+    grid-area: fb;
+}
+
+#ig {
+    margin-top: 50px;
+    grid-area: ig;
+}
+
+#contacts h2 {
+    margin-top: 20px;
+    margin-right: 26px;
+    font-size: 35px;
+    line-height: 50px;
+    margin-left: 10px;
+    border-right: 4px solid rgb(48, 84, 126);
+}
+
+a:-webkit-any-link {
+    color:#576baa;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
