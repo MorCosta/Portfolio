@@ -1,7 +1,7 @@
 # Portfolio.
 
 ## Description.
-In this project, I worked to create my own personal Portfolio. Here i coolect, and I will collect all my works/projects, so that anyone will be able to view them in a simple and quick way.
+In this project, I worked to create my own personal Portfolio. Here i collect, and I will collect all my works/projects, so that anyone will be able to view them in a simple and quick way.
 
 ## Installation
 N/A
